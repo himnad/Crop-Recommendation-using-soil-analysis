@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: #eaf6f6;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .result-box {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .crop-name {
+            font-size: 28px;
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        a {
+            margin-top: 25px;
+            display: inline-block;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Recommended Crop:</h1>
+        <div class="crop-name">{{ result }}</div>
+        <a href="/">Try another prediction</a>
+    </div>
+</body>
+</html>

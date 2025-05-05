@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Recommendation System</title>
+    <style>
+        body {
+            background: #f2f2f2;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #219150;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crop Recommendation System</h1>
+    <form method="POST" action="/predictdata">
+        <label>Nitrogen (N):</label>
+        <input type="number" name="N" required>
+
+        <label>Phosphorus (P):</label>
+        <input type="number" name="P" required>
+
+        <label>Potassium (K):</label>
+        <input type="number" name="K" required>
+
+        <label>Temperature (°C):</label>
+        <input type="number" step="any" name="temperature" required>
+
+        <label>Humidity (%):</label>
+        <input type="number" step="any" name="humidity" required>
+
+        <label>Rainfall (mm):</label>
+        <input type="number" step="any" name="rainfall" required>
+
+        <label>pH Level:</label>
+        <input type="number" step="any" name="ph" required>
+
+        <button type="submit">Predict Best Crop</button>
+    </form>
+</body>
+</html>
