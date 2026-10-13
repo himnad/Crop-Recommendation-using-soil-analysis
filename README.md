@@ -106,6 +106,3 @@ Open the local address displayed in the terminal and enter the soil and climatic
 
 By combining soil science with machine learning, this project provides a data-driven means of selecting crops that suit local soil and climatic conditions, thereby promoting higher productivity, efficient use of resources, and sustainable agricultural practice.
 
-## License
-
-A license has not yet been specified. One may be added to the repository.
