@@ -1,3 +1,7 @@
+## Live Demo
+
+[Try Crop Recommendation System](https://crop-recommendation-using-soil-analysis-1.onrender.com)
+
 # Crop Recommendation Using Soil Analysis
 
 **A machine-learning system that recommends the most suitable crop for a given set of soil and climatic parameters.**
